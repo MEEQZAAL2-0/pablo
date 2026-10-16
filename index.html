@@ -221,6 +221,12 @@ src="https://www.facebook.com/tr?id=1046205298000993&ev=PageView&noscript=1"
     .zones{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--border)}
     .zones-left{padding:80px 56px;border-right:1px solid var(--border)}
     .zones-right{padding:80px 56px;background:var(--off);display:flex;flex-direction:column;justify-content:center}
+    .reviews{padding:80px 56px;background:var(--off);border-bottom:1px solid var(--border)}
+    .review-card{max-width:620px;background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:28px 32px}
+    .review-stars{color:var(--gold);font-size:1.1rem;letter-spacing:.1em;margin-bottom:10px}
+    .review-card blockquote{font-size:1.05rem;color:var(--ink);line-height:1.7;margin-bottom:16px}
+    .review-card figcaption{display:flex;align-items:center;gap:10px;font-size:.88rem;color:var(--ink2);font-weight:500}
+    .review-avatar{width:34px;height:34px;border-radius:50%;background:var(--green);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-weight:600}
     .faq{padding:80px 56px;border-bottom:1px solid var(--border)}
     .faq-item{max-width:760px;border-top:1px solid var(--border);padding:22px 0}
     .faq-item h3{font-size:1.05rem;font-weight:600;color:var(--ink);margin-bottom:8px}
@@ -316,6 +322,8 @@ src="https://www.facebook.com/tr?id=1046205298000993&ev=PageView&noscript=1"
       .zones{grid-template-columns:1fr}
       .zones-left{border-right:none;border-bottom:1px solid var(--border);padding:52px 24px}
       .zones-right{padding:52px 24px}
+      .reviews{padding:52px 24px}
+      .review-card{padding:22px 20px}
       .faq{padding:52px 24px}
       .cta-band{padding:64px 24px}
       .contact{grid-template-columns:1fr}
@@ -545,6 +553,19 @@ src="https://www.facebook.com/tr?id=1046205298000993&ev=PageView&noscript=1"
   </section>
 
   <!-- CTA -->
+  <!-- AVIS -->
+  <section class="reviews" id="avis">
+    <div class="reveal">
+      <div class="eyebrow">Avis Google</div>
+      <h2 class="display section-title">Ils nous ont<br/>fait confiance.</h2>
+    </div>
+    <figure class="review-card reveal">
+      <div class="review-stars" aria-label="5 étoiles sur 5">★★★★★</div>
+      <blockquote>« Merci pour son professionnalisme et sa rigueur ! Super travail je recommande ! »</blockquote>
+      <figcaption><span class="review-avatar">E</span>Emma Paret · avis Google</figcaption>
+    </figure>
+  </section>
+
   <!-- FAQ -->
   <section class="faq" id="faq">
     <div class="reveal">
@@ -555,8 +576,32 @@ src="https://www.facebook.com/tr?id=1046205298000993&ev=PageView&noscript=1"
       <h3>Vous faites quels travaux de rénovation intérieure ?</h3>
       <p>Nous faisons la rénovation intérieure en second œuvre : peinture, sols, plomberie, électricité, plaquisterie et isolation. Concept Reno by Pablo prend aussi en charge le carrelage, la faïence, les faux-plafonds et la remise en état. Le chantier peut aller d'une intervention partielle à une rénovation complète.</p>
     </div>
+    <div class="faq-item reveal">
+      <h3>Est-ce qu'on peut vous confier une rénovation maison ou appartement ?</h3>
+      <p>Oui. Concept Reno by Pablo rénove les maisons individuelles comme les appartements, ainsi que les locaux commerciaux et les bureaux. Nous intervenons sur une pièce, comme une salle de bain, ou sur une rénovation complète qui regroupe plusieurs corps de métier.</p>
+    </div>
+    <div class="faq-item reveal">
+      <h3>Faut-il réserver une visite avant le devis ?</h3>
+      <p>Oui, le devis se fait après une visite sur place. Nous nous déplaçons pour évaluer précisément le chantier, puis nous remettons un devis détaillé sous 48h. La visite et le devis sont gratuits et sans engagement.</p>
+    </div>
+    <div class="faq-item reveal">
+      <h3>Vous intervenez seulement à Gaillac ?</h3>
+      <p>Non. Basée à Gaillac, l'entreprise intervient principalement à Gaillac, Albi, Lisle-sur-Tarn, Cordes-sur-Ciel et dans les communes proches du Tarn (81). Pour un projet hors secteur, contactez-nous : nous étudions chaque demande au cas par cas.</p>
+    </div>
+    <div class="faq-item reveal">
+      <h3>Qu'est-ce qui vous distingue pour une entreprise de rénovation à Gaillac ?</h3>
+      <p>L'équipe intervient en direct, sans sous-traitance ni intermédiaire : vous avez un seul interlocuteur du devis à la réception des travaux. Le devis est détaillé et le prix est tenu, sans surcoût ajouté sans votre accord. Les travaux sont couverts par l'assurance décennale.</p>
+    </div>
+    <div class="faq-item reveal">
+      <h3>Comment se passe la commande d'un chantier chez vous ?</h3>
+      <p>Le chantier se déroule en quatre étapes. Vous nous contactez par téléphone, WhatsApp ou formulaire. Nous faisons une visite sur place et remettons un devis détaillé sous 48h. À la signature, nous fixons la date d'intervention et le planning. Le chantier est ensuite livré propre, dans l'état convenu et dans les délais annoncés.</p>
+    </div>
+    <div class="faq-item reveal">
+      <h3>Vous faites la plaquisterie et les faux-plafonds ?</h3>
+      <p>Oui. Nous créons ou modifions des cloisons en BA13, posons des doublages et des faux-plafonds. Les joints et bandes sont tirés à la règle pour un support prêt à peindre.</p>
+    </div>
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Vous faites quels travaux de rénovation intérieure ?","acceptedAnswer":{"@type":"Answer","text":"Nous faisons la rénovation intérieure en second œuvre : peinture, sols, plomberie, électricité, plaquisterie et isolation. Concept Reno by Pablo prend aussi en charge le carrelage, la faïence, les faux-plafonds et la remise en état. Le chantier peut aller d'une intervention partielle à une rénovation complète."}}]}
+    {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Vous faites quels travaux de rénovation intérieure ?", "acceptedAnswer": {"@type": "Answer", "text": "Nous faisons la rénovation intérieure en second œuvre : peinture, sols, plomberie, électricité, plaquisterie et isolation. Concept Reno by Pablo prend aussi en charge le carrelage, la faïence, les faux-plafonds et la remise en état. Le chantier peut aller d'une intervention partielle à une rénovation complète."}}, {"@type": "Question", "name": "Est-ce qu'on peut vous confier une rénovation maison ou appartement ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. Concept Reno by Pablo rénove les maisons individuelles comme les appartements, ainsi que les locaux commerciaux et les bureaux. Nous intervenons sur une pièce, comme une salle de bain, ou sur une rénovation complète qui regroupe plusieurs corps de métier."}}, {"@type": "Question", "name": "Faut-il réserver une visite avant le devis ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, le devis se fait après une visite sur place. Nous nous déplaçons pour évaluer précisément le chantier, puis nous remettons un devis détaillé sous 48h. La visite et le devis sont gratuits et sans engagement."}}, {"@type": "Question", "name": "Vous intervenez seulement à Gaillac ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. Basée à Gaillac, l'entreprise intervient principalement à Gaillac, Albi, Lisle-sur-Tarn, Cordes-sur-Ciel et dans les communes proches du Tarn (81). Pour un projet hors secteur, contactez-nous : nous étudions chaque demande au cas par cas."}}, {"@type": "Question", "name": "Qu'est-ce qui vous distingue pour une entreprise de rénovation à Gaillac ?", "acceptedAnswer": {"@type": "Answer", "text": "L'équipe intervient en direct, sans sous-traitance ni intermédiaire : vous avez un seul interlocuteur du devis à la réception des travaux. Le devis est détaillé et le prix est tenu, sans surcoût ajouté sans votre accord. Les travaux sont couverts par l'assurance décennale."}}, {"@type": "Question", "name": "Comment se passe la commande d'un chantier chez vous ?", "acceptedAnswer": {"@type": "Answer", "text": "Le chantier se déroule en quatre étapes. Vous nous contactez par téléphone, WhatsApp ou formulaire. Nous faisons une visite sur place et remettons un devis détaillé sous 48h. À la signature, nous fixons la date d'intervention et le planning. Le chantier est ensuite livré propre, dans l'état convenu et dans les délais annoncés."}}, {"@type": "Question", "name": "Vous faites la plaquisterie et les faux-plafonds ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. Nous créons ou modifions des cloisons en BA13, posons des doublages et des faux-plafonds. Les joints et bandes sont tirés à la règle pour un support prêt à peindre."}}]}
     </script>
   </section>
 
